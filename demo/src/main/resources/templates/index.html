@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Pagina Principal CRUD </h1>
+
+<br/>
+<a th:href="@{/agregar}"> Crear persona</a>
+<p th:text="${saludar}"></p>
+<div th:if="${personas !=null and !personas.isEmpty()}">
+    <table border="1">
+        <tr>
+            <th>nombre</th>
+            <th>apellido</th>
+            <th>email</th>
+            <th>telefono</th>
+        </tr>
+        <tr th:each="persona: ${personas}">
+            <td th:text="${persona.nombre}">nombre</td>
+            <td th:text="${persona.apellido}">apellido</td>
+            <td th:text="${persona.email}">email</td>
+            <td th:text="${persona.telefono}">telefono</td>
+        </tr>
+
+    </table>
+</div>
+<div th:if="${personas == null or personas.isEmpty()}"><div/>
+no existe registro 
+</body>
+</html>

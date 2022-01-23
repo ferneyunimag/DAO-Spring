@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> Modificar datos persona</title>
+</head>
+<body>
+<h1>Person Data</h1>
+<br/>
+<a th:href="@{/}">home</a>
+<br/>
+<from th:action="/guardar" method="post" th:object="${persona}"></from>
+<label for="${}">Nombre:</label>
+<input type="text" name="nombre" th:field="*{nombre}">
+
+</body>
+</html>
