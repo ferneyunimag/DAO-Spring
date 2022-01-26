@@ -2,3 +2,11 @@ create table PERSONA  (nombre varchar(60),apellido varchar(60), email varchar(60
 INSERT  INTO  PERSONA VALUES ('ferney','caceres','fermey@gmail.com','2345677');
 INSERT  INTO  PERSONA VALUES ('esli','polo','esli@hotamil.com','8767563456');
 insert into  PERSONA values ( 'roman','valdes','RValdes@gmail.com','123454566' );
+insert into  PERSONA values ( 'arturo','grisales','arturo@gmail.com','123454566' );
+insert into  PERSONA values ( 'Karina','valderrama','karina@gmail.com','123454566' );
+insert into  PERSONA values ( 'claudia','ramires','clauida@gmail.com','123454566' );
+insert into  PERSONA values ( 'arturo','carranza','arturoCarr@gmail.com','123454566' );
+insert into  PERSONA values ( 'jeinis','avendano','jeinis@gmail.com','123454566' );
+insert into  PERSONA values ( 'vilma','palma','vilma@gmail.com','123454566' );
+insert into  PERSONA values ( 'eduardo',' conrado','eduardo@gmail.com','123454566' );
+insert into  PERSONA values ( 'gabriel','marquez','gabriel @gmail.com','123454566' );

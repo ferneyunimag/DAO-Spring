@@ -28,7 +28,7 @@
     <label for="telefono">Telefono:</label>
     <input type="tel" name="telefono" th:field="*{telefono}"/>
     <br/>
-    <input type="submit" name="/guardar" value="Guardar"/>
+    <input th:type="submit"  th:name="/guardar"th:text="Guardar"/>
 
 </from>
 

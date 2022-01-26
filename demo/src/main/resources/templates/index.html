@@ -25,8 +25,8 @@
             <td th:text="${persona.apellido}" bgcolor="#fff5ee">apellido</td>
             <td th:text="${persona.email}" bgcolor="#fff5ee">email</td>
             <td th:text="${persona.telefono}" bgcolor="#fff5ee">telefono</td>
-
             <td><a  th:type="submit" th:href="@{/editar/} + ${persona.email}" th:text="editar"/></td>
+            <td><a  th:type="submit" th:href="@{/delete/} + ${persona.email}" th:text="delete"/></td>
         </tr>
 
     </table>
